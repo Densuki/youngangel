@@ -12,7 +12,7 @@ client = discord.Client()
 #===================================================
 COR = 0x690FC3
 Token = secreto.seu_token()
-Test = test.test()
+Test = test.comandos()
 
 msg_id = None
 msg_user = None

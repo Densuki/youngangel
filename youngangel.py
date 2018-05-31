@@ -63,8 +63,7 @@ async def on_message(message): #Condição
 
     if message.content.lower().startswith('#cargos'):  #BASE PARA CARGOS
      if message.author.id == "336311215099740160":  # permissão por ID [EU]
-      if message.author.id == "286206456108154880":  # permissão por ID [DinoSPACE]
-       embed1 = discord.Embed(
+      embed1 = discord.Embed(
         title="**Cargos Superiores**\n "
               ,
         color=COR,
@@ -77,22 +76,22 @@ async def on_message(message): #Condição
                     "- Bomber Rank B  = 🛠 \n"
                     "- Bomber Rank C  = 🔨",)
 
-       botmsg = await client.send_message(message.channel, embed=embed1)
+     botmsg = await client.send_message(message.channel, embed=embed1)
 
-       await client.add_reaction(botmsg, "🌌")
-       await client.add_reaction(botmsg, "⚡")
-       await client.add_reaction(botmsg, "⭐")
-       await client.add_reaction(botmsg, "⚜")
-       await client.add_reaction(botmsg, "🔧")
-       await client.add_reaction(botmsg, "🛠")
-       await client.add_reaction(botmsg, "🔨")
+     await client.add_reaction(botmsg, "🌌")
+     await client.add_reaction(botmsg, "⚡")
+     await client.add_reaction(botmsg, "⭐")
+     await client.add_reaction(botmsg, "⚜")
+     await client.add_reaction(botmsg, "🔧")
+     await client.add_reaction(botmsg, "🛠")
+     await client.add_reaction(botmsg, "🔨")
 
 
-       global msg_id
-       msg_id = botmsg.id
+     global msg_id
+     msg_id = botmsg.id
 
-       global msg_user
-       msg_user = message.author
+     global msg_user
+     msg_user = message.author
 
 
 @client.event

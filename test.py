@@ -4,12 +4,10 @@
 
 import discord
 import asyncio
-
+import youngangel
 import secreto
 
 # ----------------------------------------------------
-
-from discord.ext import commands
 
 # ----------------------------------------------------
 

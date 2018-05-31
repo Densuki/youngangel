@@ -19,7 +19,7 @@ COR = 0x690FC3
 Token = secreto.seu_token()
 #cargos = cargos.cargos()
 #coin = moedas.moeda()
-#msg_id = None
+msg_id = None
 msg_user = None
 
 #===================================================

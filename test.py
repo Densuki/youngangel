@@ -4,7 +4,6 @@
 
 import discord
 import asyncio
-import youngangel
 import secreto
 
 # ----------------------------------------------------
@@ -15,24 +14,13 @@ import secreto
 client = discord.Client()
 # ===================================================
 COR = 0x690FC3
-Token = secreto.seu_token()
+
 msg_id = None
 msg_user = None
 
 # ===================================================
 # IDENTIDADE PELO CONSOLE
 # ===================================================
-
-@client.event
-async def on_ready():
-    print('===================================================')
-    print('BOT ONLINE: - Olá Mundo!')
-    print(client.user.name)
-    print(client.user.id)
-    print('===================================================')
-    print('Version - 1.2')
-    print('===================================================')
-
 
 # ===================================================
 # TEST

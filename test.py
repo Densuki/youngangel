@@ -52,6 +52,6 @@ async def on_message(text):
 
 @client.event
 async def on_message(message):  # Condição
-    if message.content.lower().startswith('test'):  # PREFIX DO COMANDO (Deste, no caso)
+    if message.content.lower().startswith('fala'):  # PREFIX DO COMANDO (Deste, no caso)
         await client.send_message(message.channel,
                                   "**Estar tudo certo!**")  # Mensagem como resultado

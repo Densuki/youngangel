@@ -25,7 +25,7 @@ msg_user = None
 # ===================================================
 # TEST
 # ===================================================
-def test():
+def test(
 # ===================================================
 # LOOP BREAK
 # ===================================================
@@ -43,3 +43,4 @@ async def on_message(message):  # Condição
     if message.content.lower().startswith('fala'):  # PREFIX DO COMANDO (Deste, no caso)
         await client.send_message(message.channel,
                                   "**Estar tudo certo!**")  # Mensagem como resultado
+):

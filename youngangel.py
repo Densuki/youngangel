@@ -5,19 +5,13 @@
 import discord
 import asyncio
 import secreto
-#import cargos
-#import moedas
-#import reação
-#import purge
-#import music
 
 #===================================================
 client = discord.Client()
 #===================================================
 COR = 0x690FC3
 Token = secreto.seu_token()
-#cargos = cargos.cargos()
-#coin = moedas.moeda()
+
 msg_id = None
 msg_user = None
 

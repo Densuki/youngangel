@@ -70,11 +70,11 @@ async def on_message(message): #Condição
         color=COR,
         description="- Fundador = ⚡🌌⚡\n"
                     "- Dono(a)  =  ⭐⭐ \n"
-                    "- ADM  = ⭐ \n" 
-                    "- The Seven Emperor  = ⚜🔰 \n"
-                    "- BOT Manager  = 🔧 \n"
-                    "- MOD  = 🛠 \n"
-                    "- STAFF  = 🔨",)
+                    "- adm  = ⭐ \n" 
+                    "- Bomber Rank S  = ⚜🔰 \n"
+                    "- Bomber Rank A  = 🔧 \n"
+                    "- Bomber Rank B  = 🛠 \n"
+                    "- Bomber Rank C  = 🔨",)
 
      botmsg = await client.send_message(message.channel, embed=embed1)
 
@@ -109,27 +109,27 @@ async def on_reaction_add(reaction, user):
      print("add")
 
     if reaction.emoji == "⭐" and msg.id == msg_id: #and user == msg_user:
-     role = discord.utils.find(lambda r: r.name == "ADM", msg.server.roles)
+     role = discord.utils.find(lambda r: r.name == "adm", msg.server.roles)
      await client.add_roles(user, role)
      print("add")
 
     if reaction.emoji == "⚜" and msg.id == msg_id: #and user == msg_user:
-     role = discord.utils.find(lambda r: r.name == "🔰💎🔰The Seven Emperor🔰💎🔰", msg.server.roles)
+     role = discord.utils.find(lambda r: r.name == "Bomber Rank S", msg.server.roles)
      await client.add_roles(user, role)
      print("add")
 
     if reaction.emoji == "🔧" and msg.id == msg_id: #and user == msg_user:
-     role = discord.utils.find(lambda r: r.name == "BOT Manager", msg.server.roles)
+     role = discord.utils.find(lambda r: r.name == "Bomber Rank A", msg.server.roles)
      await client.add_roles(user, role)
      print("add")
 
     if reaction.emoji == "🛠" and msg.id == msg_id: #and user == msg_user:
-     role = discord.utils.find(lambda r: r.name == "MOD", msg.server.roles)
+     role = discord.utils.find(lambda r: r.name == "Bomber Rank B", msg.server.roles)
      await client.add_roles(user, role)
      print("add")
 
     if reaction.emoji == "🔨" and msg.id == msg_id: #and user == msg_user:
-     role = discord.utils.find(lambda r: r.name == "STAFF", msg.server.roles)
+     role = discord.utils.find(lambda r: r.name == "Bomber Rank C", msg.server.roles)
      await client.add_roles(user, role)
      print("add")
 
@@ -148,27 +148,27 @@ async def on_reaction_remove(reaction, user):
      print("remove")
 
     if reaction.emoji == "⭐" and msg.id == msg_id: #and user == msg_user:
-     role = discord.utils.find(lambda r: r.name == "ADM", msg.server.roles)
+     role = discord.utils.find(lambda r: r.name == "adm", msg.server.roles)
      await client.remove_roles(user, role)
      print("remove")
 
     if reaction.emoji == "⚜" and msg.id == msg_id: #and user == msg_user:
-     role = discord.utils.find(lambda r: r.name == "🔰💎🔰The Seven Emperor🔰💎🔰", msg.server.roles)
+     role = discord.utils.find(lambda r: r.name == "Bomber Rank S", msg.server.roles)
      await client.remove_roles(user, role)
      print("remove")
 
     if reaction.emoji == "🔧" and msg.id == msg_id: #and user == msg_user:
-     role = discord.utils.find(lambda r: r.name == "BOT Manager", msg.server.roles)
+     role = discord.utils.find(lambda r: r.name == "Bomber Rank A", msg.server.roles)
      await client.remove_roles(user, role)
      print("remove")
 
     if reaction.emoji == "🛠" and msg.id == msg_id: #and user == msg_user:
-     role = discord.utils.find(lambda r: r.name == "MOD", msg.server.roles)
+     role = discord.utils.find(lambda r: r.name == "Bomber Rank B", msg.server.roles)
      await client.remove_roles(user, role)
      print("remove")
 
     if reaction.emoji == "🔨" and msg.id == msg_id: #and user == msg_user:
-     role = discord.utils.find(lambda r: r.name == "STAFF", msg.server.roles)
+     role = discord.utils.find(lambda r: r.name == "Bomber Rank C", msg.server.roles)
      await client.remove_roles(user, role)
      print("remove")
 

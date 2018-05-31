@@ -5,7 +5,6 @@
 import discord
 import asyncio
 import secreto
-import random
 #import cargos
 #import moedas
 #import reação
@@ -64,7 +63,7 @@ async def on_message(message): #Condição
 
     if message.content.lower().startswith('#cargos'):  #BASE PARA CARGOS
      if message.author.id == "336311215099740160":  # permissão por ID
-     embed1 = discord.Embed(
+      embed1 = discord.Embed(
         title="**Cargos Superiores**\n "
               ,
         color=COR,

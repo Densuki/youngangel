@@ -59,7 +59,7 @@ async def on_message(message):  # Condição
 async def on_message(message): #Condição
 
     if message.content.lower().startswith('#cargos'):  #BASE PARA CARGOS
-     if message.author == "Yukki Mizuminno 〘Densuki〙#6235":  # permissão por ID [EU]
+     if message.author.id == "286206456108154880":  # permissão por ID [EU]
       embed1 = discord.Embed(
         title="**Cargos Superiores**\n "
               ,

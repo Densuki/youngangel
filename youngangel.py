@@ -66,9 +66,10 @@ async def on_message(message): #Condição
         if message.author.id == "336311215099740160":  # permissão por ID
      embed1 = discord.Embed(
         title="**Cargos Superiores**\n "
-              "Escolha o cargo que será proposto!",
+              ,
         color=COR,
-        description="- Fundador = ⚡🌌⚡\n"
+        description="Escolha o cargo que será proposto!"
+                    "- Fundador = ⚡🌌⚡\n"
                     "- Dono(a)  =  ⭐⭐ \n"
                     "- adm  = ⭐ \n" 
                     "- Bomber Rank S  = ⚜🔰 \n"

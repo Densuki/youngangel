@@ -5,6 +5,7 @@
 import discord
 import asyncio
 import secreto
+import test
 
 #===================================================
 client = discord.Client()

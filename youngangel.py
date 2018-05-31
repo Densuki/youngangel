@@ -12,7 +12,6 @@ client = discord.Client()
 #===================================================
 COR = 0x690FC3
 Token = secreto.seu_token()
-Test = test.comandos()
 
 msg_id = None
 msg_user = None
@@ -34,7 +33,10 @@ async def on_ready():
 #===================================================
 #MODELO PARA COMANDOS
 #===================================================
-
+@client.event
+async def on_message(message):  # Condição
+    if message.content.lower().startswith('fala'):  # PREFIX DO COMANDO (Deste, no caso)
+        await client.send_message(message.channel,"**Estar tudo certo!**") # Mensagem como resultado
 # ===================================================
 # Mensagens Contínuas
 # ===================================================

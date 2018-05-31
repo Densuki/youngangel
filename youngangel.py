@@ -70,7 +70,7 @@ async def on_message(message): #Condição
         color=COR,
         description="- Fundador = ⚡🌌⚡\n"
                     "- Dono(a)  =  ⭐⭐ \n"
-                    "- Sub-Dono(a)  = ⭐ \n" 
+                    "- ADM  = ⭐ \n" 
                     "- The Seven Emperor  = ⚜🔰 \n"
                     "- BOT Manager  = 🔧 \n"
                     "- MOD  = 🛠 \n"
@@ -109,7 +109,7 @@ async def on_reaction_add(reaction, user):
      print("add")
 
     if reaction.emoji == "⭐" and msg.id == msg_id: #and user == msg_user:
-     role = discord.utils.find(lambda r: r.name == "⭐Sub-Dono(a)⭐", msg.server.roles)
+     role = discord.utils.find(lambda r: r.name == "ADM", msg.server.roles)
      await client.add_roles(user, role)
      print("add")
 
@@ -148,7 +148,7 @@ async def on_reaction_remove(reaction, user):
      print("remove")
 
     if reaction.emoji == "⭐" and msg.id == msg_id: #and user == msg_user:
-     role = discord.utils.find(lambda r: r.name == "⭐Sub-Dono(a)⭐", msg.server.roles)
+     role = discord.utils.find(lambda r: r.name == "ADM", msg.server.roles)
      await client.remove_roles(user, role)
      print("remove")
 

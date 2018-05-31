@@ -77,22 +77,22 @@ async def on_message(message): #Condição
                     "- Bomber Rank B  = 🛠 \n"
                     "- Bomber Rank C  = 🔨",)
 
-      botmsg = await client.send_message(message.channel, embed=embed1)
+       botmsg = await client.send_message(message.channel, embed=embed1)
 
-      await client.add_reaction(botmsg, "🌌")
-      await client.add_reaction(botmsg, "⚡")
-      await client.add_reaction(botmsg, "⭐")
-      await client.add_reaction(botmsg, "⚜")
-      await client.add_reaction(botmsg, "🔧")
-      await client.add_reaction(botmsg, "🛠")
-      await client.add_reaction(botmsg, "🔨")
+       await client.add_reaction(botmsg, "🌌")
+       await client.add_reaction(botmsg, "⚡")
+       await client.add_reaction(botmsg, "⭐")
+       await client.add_reaction(botmsg, "⚜")
+       await client.add_reaction(botmsg, "🔧")
+       await client.add_reaction(botmsg, "🛠")
+       await client.add_reaction(botmsg, "🔨")
 
 
-      global msg_id
-      msg_id = botmsg.id
+       global msg_id
+       msg_id = botmsg.id
 
-      global msg_user
-      msg_user = message.author
+       global msg_user
+       msg_user = message.author
 
 
 @client.event

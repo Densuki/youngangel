@@ -63,8 +63,8 @@ async def on_message(message): #Condição
 
     if message.content.lower().startswith('#cargos'):  #BASE PARA CARGOS
      if message.author.id == "336311215099740160":  # permissão por ID [EU]
-     if message.author.id == "286206456108154880":  # permissão por ID [DinoSPACE]
-      embed1 = discord.Embed(
+      if message.author.id == "286206456108154880":  # permissão por ID [DinoSPACE]
+       embed1 = discord.Embed(
         title="**Cargos Superiores**\n "
               ,
         color=COR,

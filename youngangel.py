@@ -64,7 +64,7 @@ async def on_message(message): #Condição
         title="**Cargos Superiores**\n "
               ,
         color=COR,
-        description="Escolha o cargo que será proposto!"
+        description="Escolha o cargo que será proposto!\n"
                     "- Fundador = ⚡🌌⚡\n"
                     "- Dono(a)  =  ⭐⭐ \n"
                     "- adm  = ⭐ \n" 

@@ -5,13 +5,13 @@
 import discord
 import asyncio
 import secreto
-
+import cargos
 #===================================================
 client = discord.Client()
 #===================================================
 COR = 0x690FC3
 Token = secreto.seu_token()
-Roles = cargos.cargos_roles()
+Roles = cargos.roles()
 
 msg_id = None
 msg_user = None

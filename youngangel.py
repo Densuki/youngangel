@@ -11,7 +11,7 @@ client = discord.Client()
 #===================================================
 COR = 0x690FC3
 Token = secreto.seu_token()
-Roles = cargos.roles()
+Roles = cargos()
 
 msg_id = None
 msg_user = None
